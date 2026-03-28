@@ -12,7 +12,7 @@ public static class BoxingTester
         
         Console.WriteLine($"a: {a}");
         Console.WriteLine($"b: {b}");
-        Console.WriteLine($"c:  {c}");
+        Console.WriteLine($"c: {c}");
   
         // створено int а, яка зберігається у stack
         // новий об'єкт b додається до heap (boxing) і зберігає посилання на значення а 
