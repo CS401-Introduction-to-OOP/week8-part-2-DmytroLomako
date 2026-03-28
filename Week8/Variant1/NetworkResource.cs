@@ -7,17 +7,17 @@ public class NetworkResource : Resource, IDisposable
     }
     public override void Open()
     {
-    // TODO: implement
-        throw new NotImplementedException();
+        IsOpen = true;
+        Console.WriteLine($"FileResource '{Name}' opened");
     }
     public override void Close()
     {
-    // TODO: implement
-        throw new NotImplementedException();
+        IsOpen = false;
+        Console.WriteLine($"FileResource '{Name}' closed");
     }
     public void Dispose()
     {
-    // TODO: call Close() and print diagnostic message
-        throw new NotImplementedException();
+        Close();
+        Console.WriteLine($"FileResource '{Name}' disposed");
     }
 }
